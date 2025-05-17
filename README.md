@@ -11,6 +11,17 @@ This app lets you interact with an AI that pretends to be a mystery identity —
 Inspired by classic guessing games, this version runs locally and uses structured JSON replies via LLM and Pydantic validation.
 
 ---
+<p align="center">
+  <img src="images/homepage.png" alt="Home Page" width="40%">
+</p>
+
+---
+
+<p align="center">
+  <img src="images/app.png" alt="App Interface" width="70%">
+</p>
+
+---
 
 ## ✨ Features
 
@@ -27,8 +38,8 @@ Inspired by classic guessing games, this version runs locally and uses structure
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/guess-who-ai.git
-cd guess-who-ai
+git clone https://github.com/Leonnorblad/guessing_game
+cd guessing_game
 ```
 
 ### 2. Create a virtual environment (optional but recommended)
