@@ -12,13 +12,13 @@ Inspired by classic guessing games, this version runs locally and uses structure
 
 ---
 <p align="center">
-  <img src="images/homepage.png" alt="Home Page" width="40%">
+  <img src="images/homepage.png" alt="Home Page" width="65%">
 </p>
 
 ---
 
 <p align="center">
-  <img src="images/app.png" alt="App Interface" width="70%">
+  <img src="images/app.png" alt="App Interface" width="90%">
 </p>
 
 ---
