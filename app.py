@@ -57,8 +57,6 @@ Your task is to:
 
     max_retries = 3
     temperature = 0.7
-    print(f"System prompt: {system_prompt}")
-    print(f"User prompt: {prompt}")
     
     for _ in range(max_retries):
         raw = chat(
@@ -70,7 +68,6 @@ Your task is to:
             format=None,
             options={"temperature": temperature},
         ).message.content.strip()
-    print("Using character: ", raw)
     
     return raw
 
@@ -114,7 +111,6 @@ def ask_identity_ai(
 ) -> Optional[IdentityAnswer]:
     """Send user input to the local LLM and return a validated IdentityAnswer."""
     system_prompt = SYSTEM_PROMPT.format(identity=identity)
-    print(f"System prompt: {system_prompt}")
 
     for _ in range(max_retries):
         raw = chat(
@@ -208,9 +204,7 @@ def main() -> None:
         identity_type = st.selectbox(
             "Choose what type of identity you want to guess:",
             identity_types
-        )
-        print(f"User selected identity type: {identity_type}")
-        
+        )        
         custom_details = ""
         if identity_type == "Custom":
             custom_details = st.text_area(
@@ -301,13 +295,10 @@ def main() -> None:
             prompt, 
             st.session_state.identity,
         )
-        print(answer)
         
         # Hardcode is_question to true for yes/no questions
         if answer and answer.response.lower() in ["yes", "no"]:
             answer.is_question = True
-        print(f"Identity: {st.session_state.identity.lower()}")
-        print(f"Answer: {answer.response.lower()}")
 
         # Hardcode is_correct_guess to true if the user guessed the identity
         if answer and st.session_state.identity.lower() in prompt.lower():
