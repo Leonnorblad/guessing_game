@@ -11,6 +11,17 @@ This app lets you interact with an AI that pretends to be a mystery identity —
 Inspired by classic guessing games, this version runs locally and uses structured JSON replies via LLM and Pydantic validation.
 
 ---
+<p align="center">
+  <img src="images/homepage.png" alt="Home Page" width="40%">
+</p>
+
+---
+
+<p align="center">
+  <img src="images/app.png" alt="App Interface" width="70%">
+</p>
+
+---
 
 ## ✨ Features
 
