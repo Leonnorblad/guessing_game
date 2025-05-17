@@ -27,8 +27,8 @@ Inspired by classic guessing games, this version runs locally and uses structure
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/guess-who-ai.git
-cd guess-who-ai
+git clone https://github.com/Leonnorblad/guessing_game
+cd guessing_game
 ```
 
 ### 2. Create a virtual environment (optional but recommended)
